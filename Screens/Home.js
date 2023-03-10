@@ -5,12 +5,15 @@ import {
   StyleSheet,
   SafeAreaView,
   Button,
+  StatusBar,
   Image,
 } from 'react-native';
 
 const HomeScreen = ({navigation}) => {
   return (
     <SafeAreaView>
+      <StatusBar backgroundColor={'#000000'} hidden={false} />
+
       <View style={styles.imageStyle}>
         <Image source={require('../Images/Ingredients.png')} />
       </View>
